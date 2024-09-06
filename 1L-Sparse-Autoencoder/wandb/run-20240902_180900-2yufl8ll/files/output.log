@@ -1,0 +1,64 @@
+  0%|          | 0/488281 [00:00<?, ?it/s]
+{'loss': 962.6359252929688, 'l2_loss': 288.29486083984375, 'l1_loss': 674.341064453125}
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 34, in <module>
+    x = (get_recons_loss(local_encoder=encoder))
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 301, in get_recons_loss
+    loss = model(tokens, return_type="loss")
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/HookedTransformer.py", line 590, in forward
+    loss = self.loss_fn(logits, tokens, attention_mask, per_token=loss_per_token)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/HookedTransformer.py", line 612, in loss_fn
+    return utils.lm_cross_entropy_loss(logits, tokens, attention_mask, per_token)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/utils.py", line 130, in lm_cross_entropy_loss
+    log_probs = F.log_softmax(logits, dim=-1)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py", line 1977, in log_softmax
+    ret = input.log_softmax(dim)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 11.78 GiB. GPU 0 has a total capacity of 22.17 GiB of which 278.44 MiB is free. Process 80481 has 7.70 GiB memory in use. Process 129313 has 14.19 GiB memory in use. Of the allocated memory 13.82 GiB is allocated by PyTorch, and 138.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/1L-Sparse-Autoencoder/checkpoints'
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 34, in <module>
+    x = (get_recons_loss(local_encoder=encoder))
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 301, in get_recons_loss
+    loss = model(tokens, return_type="loss")
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/HookedTransformer.py", line 590, in forward
+    loss = self.loss_fn(logits, tokens, attention_mask, per_token=loss_per_token)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/HookedTransformer.py", line 612, in loss_fn
+    return utils.lm_cross_entropy_loss(logits, tokens, attention_mask, per_token)
+  File "/usr/local/lib/python3.10/dist-packages/transformer_lens/utils.py", line 130, in lm_cross_entropy_loss
+    log_probs = F.log_softmax(logits, dim=-1)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py", line 1977, in log_softmax
+    ret = input.log_softmax(dim)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 11.78 GiB. GPU 0 has a total capacity of 22.17 GiB of which 278.44 MiB is free. Process 80481 has 7.70 GiB memory in use. Process 129313 has 14.19 GiB memory in use. Of the allocated memory 13.82 GiB is allocated by PyTorch, and 138.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/1L-Sparse-Autoencoder/checkpoints'

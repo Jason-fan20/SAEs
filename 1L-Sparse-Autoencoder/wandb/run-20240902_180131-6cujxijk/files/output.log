@@ -1,0 +1,43 @@
+  0%|          | 0/1953125 [00:00<?, ?it/s]
+{'loss': 390.1248779296875, 'l2_loss': 232.367431640625, 'l1_loss': 157.7574462890625}
+3.621013641357422 9.206764221191406 10.005194664001465
+12.51%
+Reconstruction: (0.12506387898120475, 3.621013641357422, 9.206764221191406, 10.005194664001465)
+  0%|          | 0/5 [00:00<?, ?it/s]
+Num dead tensor(0., device='cuda:0')
+{'loss': 58.070987701416016, 'l2_loss': 27.525915145874023, 'l1_loss': 30.545072555541992}
+{'loss': 58.07127380371094, 'l2_loss': 26.191028594970703, 'l1_loss': 31.880247116088867}
+{'loss': 44.67601013183594, 'l2_loss': 17.73635482788086, 'l1_loss': 26.939655303955078}
+{'loss': 43.61338806152344, 'l2_loss': 15.383613586425781, 'l1_loss': 28.229774475097656}
+{'loss': 39.01847839355469, 'l2_loss': 13.394378662109375, 'l1_loss': 25.624099731445312}
+{'loss': 38.886024475097656, 'l2_loss': 12.422449111938477, 'l1_loss': 26.463577270507812}
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 28, in <module>
+    loss_dict = {"loss": loss.item(), "l2_loss": l2_loss.item(), "l1_loss": l1_loss.item()}
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/checkpoints'
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 28, in <module>
+    loss_dict = {"loss": loss.item(), "l2_loss": l2_loss.item(), "l1_loss": l1_loss.item()}
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/checkpoints'

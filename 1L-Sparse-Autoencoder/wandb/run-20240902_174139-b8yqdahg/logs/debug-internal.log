@@ -1,0 +1,753 @@
+2024-09-02 17:41:39,928 INFO    StreamThr :27313 [internal.py:wandb_internal():85] W&B internal server running at pid: 27313, started at: 2024-09-02 17:41:39.927511
+2024-09-02 17:41:39,929 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status
+2024-09-02 17:41:39,932 INFO    WriterThread:27313 [datastore.py:open_for_write():87] open: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/run-b8yqdahg.wandb
+2024-09-02 17:41:39,932 DEBUG   SenderThread:27313 [sender.py:send():391] send: header
+2024-09-02 17:41:39,939 DEBUG   SenderThread:27313 [sender.py:send():391] send: run
+2024-09-02 17:41:40,122 INFO    SenderThread:27313 [dir_watcher.py:__init__():211] watching files in: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files
+2024-09-02 17:41:40,123 INFO    SenderThread:27313 [sender.py:_start_run_threads():1200] run started: b8yqdahg with start time 1725298899.927879
+2024-09-02 17:41:40,131 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: run_start
+2024-09-02 17:41:40,141 DEBUG   HandlerThread:27313 [system_info.py:__init__():26] System info init
+2024-09-02 17:41:40,141 DEBUG   HandlerThread:27313 [system_info.py:__init__():41] System info init done
+2024-09-02 17:41:40,141 INFO    HandlerThread:27313 [system_monitor.py:start():194] Starting system monitor
+2024-09-02 17:41:40,141 INFO    SystemMonitor:27313 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-02 17:41:40,141 INFO    HandlerThread:27313 [system_monitor.py:probe():214] Collecting system info
+2024-09-02 17:41:40,142 INFO    SystemMonitor:27313 [interfaces.py:start():188] Started cpu monitoring
+2024-09-02 17:41:40,142 INFO    SystemMonitor:27313 [interfaces.py:start():188] Started disk monitoring
+2024-09-02 17:41:40,143 INFO    SystemMonitor:27313 [interfaces.py:start():188] Started gpu monitoring
+2024-09-02 17:41:40,144 INFO    SystemMonitor:27313 [interfaces.py:start():188] Started memory monitoring
+2024-09-02 17:41:40,145 INFO    SystemMonitor:27313 [interfaces.py:start():188] Started network monitoring
+2024-09-02 17:41:40,157 DEBUG   HandlerThread:27313 [system_info.py:probe():152] Probing system
+2024-09-02 17:41:40,158 DEBUG   HandlerThread:27313 [system_info.py:_probe_git():137] Probing git
+2024-09-02 17:41:40,165 DEBUG   HandlerThread:27313 [system_info.py:_probe_git():145] Probing git done
+2024-09-02 17:41:40,165 DEBUG   HandlerThread:27313 [system_info.py:probe():200] Probing system done
+2024-09-02 17:41:40,165 DEBUG   HandlerThread:27313 [system_monitor.py:probe():223] {'os': 'Linux-6.1.85+-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-09-02T17:41:40.157088', 'startedAt': '2024-09-02T17:41:39.922105', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/workspace/1L-Sparse-Autoencoder/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/neelnanda-io/1L-Sparse-Autoencoder.git', 'commit': 'bcae01328a2f41d24bd4a9160828f2fc22737f75'}, 'email': None, 'root': '/workspace/1L-Sparse-Autoencoder', 'host': '884a7d8c0055', 'username': 'root', 'executable': '/usr/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2200.2279999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}, {'current': 2200.228, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 201.22513961791992, 'used': 74.36504364013672}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-40GB', 'memory_total': 42949672960}], 'memory': {'total': 83.47704696655273}}
+2024-09-02 17:41:40,165 INFO    HandlerThread:27313 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-02 17:41:40,165 INFO    HandlerThread:27313 [system_monitor.py:probe():227] Publishing system info
+2024-09-02 17:41:40,165 INFO    HandlerThread:27313 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-02 17:41:40,211 DEBUG   SenderThread:27313 [sender.py:send():391] send: files
+2024-09-02 17:41:40,211 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-02 17:41:40,577 INFO    wandb-upload_0:27313 [upload_job.py:push():130] Uploaded file /tmp/tmppsbsw_dhwandb/cga1w657-wandb-metadata.json
+2024-09-02 17:41:41,124 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-metadata.json
+2024-09-02 17:41:41,893 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-02 17:41:41,894 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: python_packages
+2024-09-02 17:41:41,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:41:41,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:41:41,898 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:41:41,969 DEBUG   SenderThread:27313 [sender.py:send():391] send: telemetry
+2024-09-02 17:41:42,123 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/requirements.txt
+2024-09-02 17:41:42,124 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:41:42,435 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:42,437 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:42,437 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:42,439 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:43,124 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:41:44,124 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:41:45,476 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:41:48,126 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:41:50,282 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:50,283 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:50,283 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:50,285 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:50,571 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:50,572 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:50,572 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:50,573 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:41:50,573 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:50,927 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:50,929 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:50,929 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:50,929 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:51,127 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:41:51,202 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:51,203 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:51,204 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:51,204 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:51,560 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:51,562 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:51,562 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:51,562 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:51,838 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:51,839 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:51,839 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:51,840 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:51,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:41:52,127 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:41:52,127 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:41:52,192 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:52,193 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:52,193 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:52,193 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:52,468 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:52,470 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:52,470 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:52,472 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:52,820 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:52,821 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:52,821 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:52,821 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:53,091 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:53,092 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:53,093 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:53,093 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:53,127 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:41:53,442 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:41:53,444 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:41:53,444 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:41:53,446 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:41:54,128 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:41:54,128 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:41:56,447 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:41:56,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:41:56,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:41:58,129 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:01,247 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:01,248 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:01,248 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:01,250 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:01,760 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:01,762 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:01,762 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:01,763 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:01,763 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:01,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:02,125 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:02,126 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:02,126 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:02,126 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:02,131 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:02,131 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:02,404 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:02,405 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:02,406 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:02,406 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:02,772 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:02,773 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:02,774 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:02,774 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:03,044 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:03,045 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:03,045 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:03,046 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:03,131 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:03,396 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:03,397 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:03,397 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:03,397 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:03,667 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:03,668 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:03,668 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:03,669 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:04,019 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:04,020 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:04,021 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:04,021 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:04,132 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:04,132 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:04,291 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:04,292 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:04,292 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:04,292 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:04,655 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:04,657 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:04,657 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:04,658 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:05,132 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:06,132 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:06,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:10,134 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:11,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:42:11,894 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:42:11,896 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:12,021 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:12,134 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/config.yaml
+2024-09-02 17:42:12,359 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:12,361 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:12,361 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:12,362 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:12,619 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:12,620 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:12,621 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:12,621 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:12,974 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:12,975 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:12,975 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:12,976 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:13,135 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:13,245 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:13,246 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:13,246 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:13,247 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:13,598 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:13,599 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:13,600 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:13,600 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:13,950 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:13,951 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:13,951 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:13,952 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:14,135 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:14,135 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:14,223 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:14,224 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:14,224 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:14,224 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:14,576 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:14,577 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:14,578 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:14,580 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:14,852 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:14,853 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:14,853 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:14,853 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:15,135 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:15,205 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:15,206 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:15,206 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:15,207 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:15,478 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:15,480 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:15,480 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:15,481 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:16,136 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:16,136 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:17,896 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:20,137 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:21,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:22,896 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:23,133 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:23,134 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:23,134 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:23,136 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:23,138 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:23,467 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:23,469 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:23,469 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:23,469 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:23,741 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:23,742 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:23,743 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:23,743 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:24,104 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:24,105 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:24,106 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:24,106 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:24,138 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:24,139 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:24,379 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:24,380 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:24,381 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:24,381 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:24,736 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:24,737 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:24,737 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:24,738 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:25,013 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:25,014 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:25,015 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:25,015 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:25,139 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:25,368 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:25,369 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:25,369 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:25,371 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:25,644 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:25,646 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:25,646 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:25,646 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:25,997 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:25,998 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:25,999 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:25,999 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:26,139 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:26,140 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:26,269 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:26,271 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:26,271 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:26,272 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:26,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:42:26,894 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:42:27,139 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:28,014 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:28,140 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:31,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:32,141 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:33,868 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:33,909 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:33,910 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:33,910 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:33,910 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:34,142 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:34,239 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:34,240 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:34,241 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:34,242 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:34,513 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:34,514 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:34,514 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:34,515 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:34,867 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:34,868 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:34,868 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:34,869 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:35,142 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:35,143 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:35,144 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:35,144 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:35,145 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:35,496 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:35,498 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:35,498 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:35,498 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:35,775 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:35,777 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:35,777 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:35,777 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:36,138 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:36,139 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:36,140 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:36,140 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:36,143 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:36,143 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:36,498 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:36,499 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:36,500 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:36,501 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:36,777 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:36,779 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:36,779 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:36,779 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:37,136 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:37,137 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:37,137 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:37,138 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:37,143 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:38,143 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:39,177 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:40,145 DEBUG   SystemMonitor:27313 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-02 17:42:40,150 DEBUG   SenderThread:27313 [sender.py:send():391] send: stats
+2024-09-02 17:42:41,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:42:41,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:42:41,897 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:42,145 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:44,752 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:44,792 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:44,794 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:44,794 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:44,794 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:45,048 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:45,049 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:45,049 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:45,050 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:45,146 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:45,405 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:45,406 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:45,406 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:45,406 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:45,677 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:45,678 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:45,679 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:45,679 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:46,031 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:46,032 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:46,032 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:46,033 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:46,146 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:46,146 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:46,303 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:46,305 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:46,305 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:46,305 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:46,656 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:46,658 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:46,658 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:46,660 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:46,930 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:46,931 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:46,932 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:46,932 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:47,146 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:47,287 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:47,288 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:47,288 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:47,289 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:47,564 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:47,566 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:47,566 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:47,566 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:47,921 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:47,923 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:47,923 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:47,923 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:48,147 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:48,147 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:49,924 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:50,147 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:51,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:42:54,149 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:55,622 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:42:55,661 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:55,663 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:55,663 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:55,663 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:55,918 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:55,919 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:55,920 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:55,920 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:56,150 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:56,150 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:56,277 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:56,278 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:56,278 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:56,278 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:56,552 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:56,553 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:56,553 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:56,554 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:56,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:42:56,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:42:56,907 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:56,975 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:56,975 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:56,977 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:57,150 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:57,186 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:57,187 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:57,187 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:57,187 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:57,545 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:57,546 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:57,546 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:57,546 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:57,820 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:57,821 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:57,821 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:57,821 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:58,150 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:42:58,151 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:42:58,175 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:58,176 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:58,177 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:58,177 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:58,452 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:58,454 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:58,454 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:58,454 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:58,810 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:42:58,811 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:42:58,812 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:42:58,812 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:42:59,151 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:00,151 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:00,813 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:01,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:43:04,152 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:05,834 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:06,718 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:06,718 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:06,719 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:06,719 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:07,007 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:07,008 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:07,008 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:07,010 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:07,154 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:07,362 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:07,363 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:07,363 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:07,364 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:07,716 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:07,717 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:07,717 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:07,718 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:07,991 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:07,992 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:07,993 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:07,993 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:08,154 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:08,154 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:08,347 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:08,349 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:08,349 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:08,349 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:08,623 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:08,624 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:08,624 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:08,624 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:08,978 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:08,980 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:08,980 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:08,980 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:09,154 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:09,252 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:09,253 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:09,254 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:09,254 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:09,609 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:09,610 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:09,610 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:09,611 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:09,888 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:09,889 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:09,889 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:09,890 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:10,147 DEBUG   SenderThread:27313 [sender.py:send():391] send: stats
+2024-09-02 17:43:10,155 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:10,155 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:11,147 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:11,894 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:43:11,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:43:11,897 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:43:12,155 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:14,156 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:16,803 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:17,532 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:17,533 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:17,534 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:17,535 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:17,869 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:17,870 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:17,871 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:17,871 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:18,151 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:18,153 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:18,153 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:18,153 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:18,157 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:18,157 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:18,516 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:18,517 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:18,517 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:18,517 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:18,792 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:18,794 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:18,794 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:18,794 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:19,158 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:19,158 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:19,160 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:19,160 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:19,160 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:19,439 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:19,441 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:19,441 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:19,441 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:19,804 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:19,806 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:19,806 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:19,806 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:20,084 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:20,085 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:20,086 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:20,086 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:20,158 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:20,158 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:20,443 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:20,444 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:20,444 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:20,444 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:20,720 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:20,722 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:20,722 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:20,722 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:21,158 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:21,896 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:43:21,897 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:22,159 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:26,160 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:26,895 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-02 17:43:26,895 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: stop_status
+2024-09-02 17:43:27,012 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:28,311 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:28,312 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:28,312 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:28,313 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:28,689 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:28,690 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:28,691 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:28,691 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:28,964 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:28,966 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:28,966 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:28,966 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:29,161 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:29,321 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:29,323 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:29,323 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:29,324 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:29,598 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:29,599 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:29,599 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:29,600 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:29,956 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:29,958 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:29,958 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:29,958 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:30,161 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:30,162 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:30,319 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:30,321 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:30,321 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:30,321 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:30,599 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:30,601 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:30,601 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:30,602 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:30,961 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:30,962 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:30,962 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:30,962 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:31,162 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:31,236 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:31,237 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:31,237 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:31,237 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:31,598 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-02 17:43:31,599 DEBUG   SenderThread:27313 [sender.py:send():391] send: history
+2024-09-02 17:43:31,600 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: summary_record
+2024-09-02 17:43:31,600 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:31,896 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:43:32,162 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:32,162 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:32,897 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:35,773 DEBUG   SenderThread:27313 [sender.py:send():391] send: exit
+2024-09-02 17:43:35,773 INFO    SenderThread:27313 [sender.py:send_exit():598] handling exit code: 255
+2024-09-02 17:43:35,774 INFO    SenderThread:27313 [sender.py:send_exit():600] handling runtime: 115
+2024-09-02 17:43:35,774 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:35,774 INFO    SenderThread:27313 [sender.py:send_exit():606] send defer
+2024-09-02 17:43:35,774 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,774 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-02 17:43:35,775 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,775 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-02 17:43:35,775 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 1
+2024-09-02 17:43:35,775 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,775 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-02 17:43:35,775 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,775 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-02 17:43:35,775 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 2
+2024-09-02 17:43:35,775 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,775 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-02 17:43:35,775 INFO    HandlerThread:27313 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-02 17:43:35,776 DEBUG   SystemMonitor:27313 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-02 17:43:35,776 INFO    HandlerThread:27313 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-02 17:43:35,776 DEBUG   SystemMonitor:27313 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-02 17:43:35,777 INFO    HandlerThread:27313 [interfaces.py:finish():200] Joined disk monitor
+2024-09-02 17:43:35,787 INFO    HandlerThread:27313 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-02 17:43:35,787 INFO    HandlerThread:27313 [interfaces.py:finish():200] Joined memory monitor
+2024-09-02 17:43:35,787 INFO    HandlerThread:27313 [interfaces.py:finish():200] Joined network monitor
+2024-09-02 17:43:35,788 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,788 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-02 17:43:35,788 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 3
+2024-09-02 17:43:35,788 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,788 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-02 17:43:35,788 DEBUG   SenderThread:27313 [sender.py:send():391] send: stats
+2024-09-02 17:43:35,789 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,789 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-02 17:43:35,789 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 4
+2024-09-02 17:43:35,789 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,789 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-02 17:43:35,789 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,789 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-02 17:43:35,789 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 5
+2024-09-02 17:43:35,790 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,790 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-02 17:43:35,790 DEBUG   SenderThread:27313 [sender.py:send():391] send: summary
+2024-09-02 17:43:35,790 INFO    SenderThread:27313 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-02 17:43:35,791 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,791 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-02 17:43:35,791 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 6
+2024-09-02 17:43:35,791 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,791 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-02 17:43:35,791 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,791 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-02 17:43:35,791 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 7
+2024-09-02 17:43:35,791 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: status_report
+2024-09-02 17:43:35,792 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:35,792 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-02 17:43:35,792 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:35,792 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-02 17:43:36,163 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:36,164 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:36,774 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-02 17:43:37,777 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 8
+2024-09-02 17:43:37,778 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: poll_exit
+2024-09-02 17:43:37,778 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:37,778 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-02 17:43:37,778 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:37,779 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-02 17:43:37,779 INFO    SenderThread:27313 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-02 17:43:37,779 INFO    SenderThread:27313 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-02 17:43:37,840 INFO    SenderThread:27313 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-02 17:43:37,847 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 9
+2024-09-02 17:43:37,848 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:37,848 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-02 17:43:37,848 DEBUG   SenderThread:27313 [sender.py:send():391] send: artifact
+2024-09-02 17:43:38,165 INFO    Thread-12 :27313 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:38,336 INFO    wandb-upload_0:27313 [upload_job.py:push():88] Uploaded file /tmp/tmpe9wbnh15/wandb-job.json
+2024-09-02 17:43:38,484 INFO    wandb-upload_1:27313 [upload_job.py:push():88] Uploaded file /root/.local/share/wandb/artifacts/staging/tmpftj4gqza
+2024-09-02 17:43:38,777 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-02 17:43:39,138 INFO    SenderThread:27313 [sender.py:send_artifact():1549] sent artifact job-https___github.com_neelnanda-io_1L-Sparse-Autoencoder.git_train.py - {'id': 'QXJ0aWZhY3Q6MTE3NzAxODg4Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxOTUxMDU4NQ==', 'latestArtifact': None}}
+2024-09-02 17:43:39,139 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,139 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-02 17:43:39,139 INFO    SenderThread:27313 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-02 17:43:39,165 INFO    SenderThread:27313 [dir_watcher.py:finish():388] scan: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files
+2024-09-02 17:43:39,166 INFO    SenderThread:27313 [dir_watcher.py:finish():402] scan save: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json wandb-summary.json
+2024-09-02 17:43:39,166 INFO    SenderThread:27313 [dir_watcher.py:finish():402] scan save: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/requirements.txt requirements.txt
+2024-09-02 17:43:39,169 INFO    SenderThread:27313 [dir_watcher.py:finish():402] scan save: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log output.log
+2024-09-02 17:43:39,170 INFO    SenderThread:27313 [dir_watcher.py:finish():402] scan save: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/config.yaml config.yaml
+2024-09-02 17:43:39,172 INFO    SenderThread:27313 [dir_watcher.py:finish():402] scan save: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-metadata.json wandb-metadata.json
+2024-09-02 17:43:39,172 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 10
+2024-09-02 17:43:39,172 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: poll_exit
+2024-09-02 17:43:39,175 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:39,177 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-02 17:43:39,177 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,177 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-02 17:43:39,177 INFO    SenderThread:27313 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-02 17:43:39,408 INFO    wandb-upload_0:27313 [upload_job.py:push():130] Uploaded file /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/wandb-summary.json
+2024-09-02 17:43:39,436 INFO    wandb-upload_1:27313 [upload_job.py:push():130] Uploaded file /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/requirements.txt
+2024-09-02 17:43:39,441 INFO    wandb-upload_3:27313 [upload_job.py:push():130] Uploaded file /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/config.yaml
+2024-09-02 17:43:39,459 INFO    wandb-upload_2:27313 [upload_job.py:push():130] Uploaded file /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/files/output.log
+2024-09-02 17:43:39,659 INFO    Thread-11 (_thread_body):27313 [sender.py:transition_state():626] send defer: 11
+2024-09-02 17:43:39,659 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:39,660 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-02 17:43:39,660 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,660 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-02 17:43:39,660 INFO    SenderThread:27313 [file_pusher.py:join():175] waiting for file pusher
+2024-09-02 17:43:39,660 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 12
+2024-09-02 17:43:39,661 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:39,661 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-02 17:43:39,661 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,661 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-02 17:43:39,661 INFO    SenderThread:27313 [file_stream.py:finish():601] file stream finish called
+2024-09-02 17:43:39,778 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-02 17:43:39,912 INFO    SenderThread:27313 [file_stream.py:finish():605] file stream finish is done
+2024-09-02 17:43:39,912 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 13
+2024-09-02 17:43:39,912 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: poll_exit
+2024-09-02 17:43:39,913 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:39,913 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-02 17:43:39,913 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,913 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-02 17:43:39,913 INFO    SenderThread:27313 [sender.py:transition_state():626] send defer: 14
+2024-09-02 17:43:39,913 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: defer
+2024-09-02 17:43:39,914 INFO    HandlerThread:27313 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-02 17:43:39,914 DEBUG   SenderThread:27313 [sender.py:send():391] send: final
+2024-09-02 17:43:39,914 DEBUG   SenderThread:27313 [sender.py:send():391] send: footer
+2024-09-02 17:43:39,914 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: defer
+2024-09-02 17:43:39,914 INFO    SenderThread:27313 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-02 17:43:39,915 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-02 17:43:39,915 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: server_info
+2024-09-02 17:43:39,915 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: poll_exit
+2024-09-02 17:43:39,915 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-02 17:43:39,916 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: server_info
+2024-09-02 17:43:39,916 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-02 17:43:39,920 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-02 17:43:39,921 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-02 17:43:39,975 DEBUG   SenderThread:27313 [sender.py:send_request():418] send_request: poll_exit
+2024-09-02 17:43:39,975 INFO    MainThread:27313 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-02 17:43:39,976 INFO    MainThread:27313 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-02 17:43:39,976 INFO    MainThread:27313 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-09-02 17:43:39,976 DEBUG   HandlerThread:27313 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-02 17:43:39,976 INFO    HandlerThread:27313 [handler.py:finish():884] shutting down handler
+2024-09-02 17:43:40,919 INFO    WriterThread:27313 [datastore.py:close():296] close: /workspace/1L-Sparse-Autoencoder/wandb/run-20240902_174139-b8yqdahg/run-b8yqdahg.wandb
+2024-09-02 17:43:40,975 INFO    SenderThread:27313 [sender.py:finish():1631] shutting down sender
+2024-09-02 17:43:40,975 INFO    SenderThread:27313 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-02 17:43:40,976 INFO    SenderThread:27313 [file_pusher.py:join():175] waiting for file pusher

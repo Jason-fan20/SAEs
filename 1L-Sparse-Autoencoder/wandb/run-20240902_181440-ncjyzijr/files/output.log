@@ -1,0 +1,39 @@
+  0%|          | 0/976562 [00:00<?, ?it/s]
+{'loss': 594.4381103515625, 'l2_loss': 267.8740539550781, 'l1_loss': 326.56402587890625}
+3.674398899078369 9.16486930847168 10.048295974731445
+13.86%
+Reconstruction: (0.13860071095817764, 3.674398899078369, 9.16486930847168, 10.048295974731445)
+  0%|          | 0/5 [00:00<?, ?it/s]
+Num dead tensor(0., device='cuda:0')
+{'loss': 71.19026184082031, 'l2_loss': 36.42210006713867, 'l1_loss': 34.768165588378906}
+{'loss': 79.40496826171875, 'l2_loss': 39.104217529296875, 'l1_loss': 40.30074691772461}
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 28, in <module>
+    loss_dict = {"loss": loss.item(), "l2_loss": l2_loss.item(), "l1_loss": l1_loss.item()}
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/1L-Sparse-Autoencoder/checkpoints'
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 28, in <module>
+    loss_dict = {"loss": loss.item(), "l2_loss": l2_loss.item(), "l1_loss": l1_loss.item()}
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/1L-Sparse-Autoencoder/train.py", line 54, in <module>
+    encoder.save()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 170, in save
+    version = self.get_version()
+  File "/workspace/1L-Sparse-Autoencoder/utils.py", line 163, in get_version
+    version_list = [int(file.name.split(".")[0]) for file in list(SAVE_DIR.iterdir()) if "pt" in str(file)]
+  File "/usr/lib/python3.10/pathlib.py", line 1017, in iterdir
+    for name in self._accessor.listdir(self):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/1L-Sparse-Autoencoder/checkpoints'

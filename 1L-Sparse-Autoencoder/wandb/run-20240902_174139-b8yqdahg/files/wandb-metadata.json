@@ -1,0 +1,108 @@
+{
+    "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-09-02T17:41:40.157088",
+    "startedAt": "2024-09-02T17:41:39.922105",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/workspace/1L-Sparse-Autoencoder/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/neelnanda-io/1L-Sparse-Autoencoder.git",
+        "commit": "bcae01328a2f41d24bd4a9160828f2fc22737f75"
+    },
+    "email": null,
+    "root": "/workspace/1L-Sparse-Autoencoder",
+    "host": "884a7d8c0055",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.2279999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 201.22513961791992,
+            "used": 74.36504364013672
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 83.47704696655273
+    }
+}

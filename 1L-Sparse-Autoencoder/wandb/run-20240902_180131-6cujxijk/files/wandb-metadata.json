@@ -1,0 +1,108 @@
+{
+    "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-09-02T18:01:31.451526",
+    "startedAt": "2024-09-02T18:01:31.151988",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/workspace/1L-Sparse-Autoencoder/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/neelnanda-io/1L-Sparse-Autoencoder.git",
+        "commit": "bcae01328a2f41d24bd4a9160828f2fc22737f75"
+    },
+    "email": null,
+    "root": "/workspace/1L-Sparse-Autoencoder",
+    "host": "fe2e15829935",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.216,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.216,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 201.22513961791992,
+            "used": 74.69551849365234
+        }
+    },
+    "gpu": "NVIDIA L4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA L4",
+            "memory_total": 24152899584
+        }
+    ],
+    "memory": {
+        "total": 52.96144104003906
+    }
+}
